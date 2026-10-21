@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		250F4C51A4B2EA93723CB309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6247EE701D000824F6AB0B3 /* ContentView.swift */; };
+		4574E9537AB38B1439384E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2957B76A873255A6B2F1B625 /* Assets.xcassets */; };
+		530910FB4764FA6231DBECB5 /* StepsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD051BB2BB6C9195310EAA6 /* StepsUI.swift */; };
+		69E2C1F483A9476D8F5510A2 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D731DDF005E28F70D014BFE /* HealthKitManager.swift */; };
+		722C94D70324C2DAA0BF28A8 /* VitalogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984F66A9946A86B5539B20D4 /* VitalogApp.swift */; };
+		82D3175FC35613404BE517C6 /* StepsReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF0FCC1F34A862744BF211E /* StepsReader.swift */; };
+		9A6B69F2C14244E230C34990 /* StepsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD2B5989A0EF56A4C532DDD /* StepsWidgetBundle.swift */; };
+		B7EF913E6E68CD753D1E511D /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7DD83EDD388DC1892FEF3 /* StepsWidget.swift */; };
+		BCBFD04A3755EC329E563D7B /* StepsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD051BB2BB6C9195310EAA6 /* StepsUI.swift */; };
+		EF6791BDC2FC8F979304D8EB /* StepsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2B035EE141480950AEA7BC43 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8D3044CA853A3F2CCF7C853 /* StepsReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF0FCC1F34A862744BF211E /* StepsReader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E1F94C529A0301B7904079D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD465F07EB1668A89B4E2BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70DA06A968C328E25F7EE14F;
+			remoteInfo = StepsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		230594482A31FFB3FD7018E8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF6791BDC2FC8F979304D8EB /* StepsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		183E5A2BDFFF29C392EF3B29 /* Vitalog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vitalog.entitlements; sourceTree = "<group>"; };
+		18F7DD83EDD388DC1892FEF3 /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
+		2957B76A873255A6B2F1B625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B035EE141480950AEA7BC43 /* StepsWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = StepsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD051BB2BB6C9195310EAA6 /* StepsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsUI.swift; sourceTree = "<group>"; };
+		4D731DDF005E28F70D014BFE /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		5AD2B5989A0EF56A4C532DDD /* StepsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidgetBundle.swift; sourceTree = "<group>"; };
+		6ACFC688DF91EB4D06850D9B /* StepsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepsWidget.entitlements; sourceTree = "<group>"; };
+		7660E6BE8881A47CF29DA5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7EF0FCC1F34A862744BF211E /* StepsReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsReader.swift; sourceTree = "<group>"; };
+		984F66A9946A86B5539B20D4 /* VitalogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalogApp.swift; sourceTree = "<group>"; };
+		B7E8EB59CD8943FEAE1DCF7B /* Vitalog.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Vitalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6247EE701D000824F6AB0B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		23878CAA8E6EA3B1E99D1655 = {
+			isa = PBXGroup;
+			children = (
+				4C48BCEAD3F2CB33637BC27B /* Shared */,
+				E05ED8E5674C81E3A47363C5 /* StepsWidget */,
+				D2BDB65C6539099C1BA9F8A7 /* Vitalog */,
+				65901B24E94684678EBA846D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C48BCEAD3F2CB33637BC27B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7EF0FCC1F34A862744BF211E /* StepsReader.swift */,
+				2FD051BB2BB6C9195310EAA6 /* StepsUI.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		65901B24E94684678EBA846D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B035EE141480950AEA7BC43 /* StepsWidgetExtension.appex */,
+				B7E8EB59CD8943FEAE1DCF7B /* Vitalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2BDB65C6539099C1BA9F8A7 /* Vitalog */ = {
+			isa = PBXGroup;
+			children = (
+				2957B76A873255A6B2F1B625 /* Assets.xcassets */,
+				C6247EE701D000824F6AB0B3 /* ContentView.swift */,
+				4D731DDF005E28F70D014BFE /* HealthKitManager.swift */,
+				183E5A2BDFFF29C392EF3B29 /* Vitalog.entitlements */,
+				984F66A9946A86B5539B20D4 /* VitalogApp.swift */,
+			);
+			path = Vitalog;
+			sourceTree = "<group>";
+		};
+		E05ED8E5674C81E3A47363C5 /* StepsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7660E6BE8881A47CF29DA5C3 /* Info.plist */,
+				6ACFC688DF91EB4D06850D9B /* StepsWidget.entitlements */,
+				18F7DD83EDD388DC1892FEF3 /* StepsWidget.swift */,
+				5AD2B5989A0EF56A4C532DDD /* StepsWidgetBundle.swift */,
+			);
+			path = StepsWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63029C1ACEB9648FDDD6BA32 /* Vitalog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29DCDDDE2483DD672563A35 /* Build configuration list for PBXNativeTarget "Vitalog" */;
+			buildPhases = (
+				F2F565D5BCF12BA523B3EBE9 /* Sources */,
+				F0FF4D822A75CFD47A536387 /* Resources */,
+				230594482A31FFB3FD7018E8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772298EE90A49E5A65E50266 /* PBXTargetDependency */,
+			);
+			name = Vitalog;
+			packageProductDependencies = (
+			);
+			productName = Vitalog;
+			productReference = B7E8EB59CD8943FEAE1DCF7B /* Vitalog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70DA06A968C328E25F7EE14F /* StepsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDEBE0732347382ADC3FA8C /* Build configuration list for PBXNativeTarget "StepsWidgetExtension" */;
+			buildPhases = (
+				358E62CF58AB9B68A22A3C63 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepsWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = StepsWidgetExtension;
+			productReference = 2B035EE141480950AEA7BC43 /* StepsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AD465F07EB1668A89B4E2BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					63029C1ACEB9648FDDD6BA32 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					70DA06A968C328E25F7EE14F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF33C38FA1011AB8BBB32A88 /* Build configuration list for PBXProject "Vitalog" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 23878CAA8E6EA3B1E99D1655;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 65901B24E94684678EBA846D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70DA06A968C328E25F7EE14F /* StepsWidgetExtension */,
+				63029C1ACEB9648FDDD6BA32 /* Vitalog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0FF4D822A75CFD47A536387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4574E9537AB38B1439384E77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		358E62CF58AB9B68A22A3C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D3175FC35613404BE517C6 /* StepsReader.swift in Sources */,
+				530910FB4764FA6231DBECB5 /* StepsUI.swift in Sources */,
+				B7EF913E6E68CD753D1E511D /* StepsWidget.swift in Sources */,
+				9A6B69F2C14244E230C34990 /* StepsWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F565D5BCF12BA523B3EBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250F4C51A4B2EA93723CB309 /* ContentView.swift in Sources */,
+				69E2C1F483A9476D8F5510A2 /* HealthKitManager.swift in Sources */,
+				F8D3044CA853A3F2CCF7C853 /* StepsReader.swift in Sources */,
+				BCBFD04A3755EC329E563D7B /* StepsUI.swift in Sources */,
+				722C94D70324C2DAA0BF28A8 /* VitalogApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		772298EE90A49E5A65E50266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70DA06A968C328E25F7EE14F /* StepsWidgetExtension */;
+			targetProxy = 1E1F94C529A0301B7904079D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06E54A6850819EF2922A45A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		16B2EF3670C15DE70B38B5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StepsWidget/StepsWidget.entitlements;
+				INFOPLIST_FILE = StepsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.vitalog.Vitalog.StepsWidget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17ADFE98EB7D5AD1FEA5C23F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vitalog/Vitalog.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "오늘의 걸음 수를 읽어 활동을 보여주기 위해 사용합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.vitalog.Vitalog;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA3C5C502F81DDE805B5C520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CBEC9DF5EFC1C5E2516F7CBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vitalog/Vitalog.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "오늘의 걸음 수를 읽어 활동을 보여주기 위해 사용합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.vitalog.Vitalog;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F1F0D4BBD6A44AE16A9E49F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = StepsWidget/StepsWidget.entitlements;
+				INFOPLIST_FILE = StepsWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.vitalog.Vitalog.StepsWidget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A29DCDDDE2483DD672563A35 /* Build configuration list for PBXNativeTarget "Vitalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17ADFE98EB7D5AD1FEA5C23F /* Debug */,
+				CBEC9DF5EFC1C5E2516F7CBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ABDEBE0732347382ADC3FA8C /* Build configuration list for PBXNativeTarget "StepsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B2EF3670C15DE70B38B5AB /* Debug */,
+				F1F0D4BBD6A44AE16A9E49F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF33C38FA1011AB8BBB32A88 /* Build configuration list for PBXProject "Vitalog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E54A6850819EF2922A45A9 /* Debug */,
+				CA3C5C502F81DDE805B5C520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AD465F07EB1668A89B4E2BC /* Project object */;
+}
