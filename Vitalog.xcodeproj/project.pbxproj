@@ -329,7 +329,7 @@
 				CODE_SIGN_ENTITLEMENTS = Vitalog/Vitalog.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "오늘의 걸음 수를 읽어 활동을 보여주기 위해 사용합니다.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "오늘의 걸음 수와 활동 에너지를 읽어 활동을 보여주기 위해 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,7 +411,7 @@
 				CODE_SIGN_ENTITLEMENTS = Vitalog/Vitalog.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "오늘의 걸음 수를 읽어 활동을 보여주기 위해 사용합니다.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "오늘의 걸음 수와 활동 에너지를 읽어 활동을 보여주기 위해 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				LD_RUNPATH_SEARCH_PATHS = (

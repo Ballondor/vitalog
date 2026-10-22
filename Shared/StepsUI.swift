@@ -5,6 +5,34 @@ enum StepGoal {
     static let daily = 10_000
 }
 
+/// kcal 값을 정수 문자열로 포맷한다. (예: 299.4 → "299")
+func kcalText(_ kcal: Double) -> String {
+    "\(Int(kcal.rounded())) kcal"
+}
+
+/// 아이콘 + 라벨 + 값 한 벌의 작은 통계 뱃지. (앱 + 위젯 공용)
+struct StatBadge: View {
+    let icon: String
+    let tint: Color
+    let label: String
+    let value: String
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: icon)
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(tint)
+            VStack(alignment: .leading, spacing: 1) {
+                Text(label)
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                Text(value)
+                    .font(.subheadline.weight(.semibold))
+            }
+        }
+    }
+}
+
 /// 오늘 걸음 수를 목표 대비 진행 링으로 보여주는 공용 뷰. (앱 + 위젯 공용)
 struct StepsRing: View {
     let steps: Int

@@ -27,7 +27,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: kr.co.vitalog.Vitalog
         GENERATE_INFOPLIST_FILE: YES
         CODE_SIGN_ENTITLEMENTS: Vitalog/Vitalog.entitlements
-        INFOPLIST_KEY_NSHealthShareUsageDescription: "오늘의 걸음 수를 읽어 활동을 보여주기 위해 사용합니다."
+        INFOPLIST_KEY_NSHealthShareUsageDescription: "오늘의 걸음 수와 활동 에너지를 읽어 활동을 보여주기 위해 사용합니다."
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
