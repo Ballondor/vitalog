@@ -3,29 +3,33 @@ import SwiftUI
 
 struct StepsEntry: TimelineEntry {
     let date: Date
-    let steps: Int
+    let activity: TodayActivity
 }
 
 struct StepsProvider: TimelineProvider {
+    private var sample: TodayActivity {
+        TodayActivity(steps: 6420, activeKcal: 320, estimatedKcal: 256)
+    }
+
     func placeholder(in context: Context) -> StepsEntry {
-        StepsEntry(date: Date(), steps: 6420)
+        StepsEntry(date: Date(), activity: sample)
     }
 
     func getSnapshot(in context: Context, completion: @escaping (StepsEntry) -> Void) {
         if context.isPreview {
-            completion(StepsEntry(date: Date(), steps: 6420))
+            completion(StepsEntry(date: Date(), activity: sample))
             return
         }
         Task {
-            let steps = await StepsReader.todaySteps()
-            completion(StepsEntry(date: Date(), steps: steps))
+            let activity = await StepsReader.todayActivity()
+            completion(StepsEntry(date: Date(), activity: activity))
         }
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<StepsEntry>) -> Void) {
         Task {
-            let steps = await StepsReader.todaySteps()
-            let entry = StepsEntry(date: Date(), steps: steps)
+            let activity = await StepsReader.todayActivity()
+            let entry = StepsEntry(date: Date(), activity: activity)
             // 약 30분 뒤 갱신 (WidgetKit 예산에 따라 실제 주기는 달라질 수 있음)
             let next = Calendar.current.date(byAdding: .minute, value: 30, to: Date()) ?? Date().addingTimeInterval(1800)
             completion(Timeline(entries: [entry], policy: .after(next)))
@@ -37,30 +41,47 @@ struct StepsWidgetEntryView: View {
     var entry: StepsEntry
     @Environment(\.widgetFamily) private var family
 
+    private var activity: TodayActivity { entry.activity }
+
     var body: some View {
         switch family {
         case .systemMedium:
-            HStack(spacing: 20) {
-                StepsRing(steps: entry.steps, lineWidth: 12)
-                    .frame(width: 110, height: 110)
+            HStack(spacing: 18) {
+                StepsRing(steps: activity.steps, lineWidth: 12)
+                    .frame(width: 104, height: 104)
 
-                VStack(alignment: .leading, spacing: 6) {
-                    Label("오늘 걸음수", systemImage: "figure.walk")
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(.green)
-                    Text(entry.steps, format: .number)
-                        .font(.system(.largeTitle, design: .rounded).weight(.bold))
-                    Text("목표 \(StepGoal.daily.formatted()) 걸음")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Label("오늘 걸음수", systemImage: "figure.walk")
+                            .font(.caption.weight(.semibold))
+                            .foregroundStyle(.green)
+                        Text(activity.steps, format: .number)
+                            .font(.system(.title, design: .rounded).weight(.bold))
+                    }
+                    StatBadge(icon: "flame.fill", tint: .orange,
+                              label: "활동 에너지", value: kcalText(activity.activeKcal))
+                    StatBadge(icon: "figure.walk", tint: .green,
+                              label: "걸음 추정", value: kcalText(activity.estimatedKcal))
                 }
                 Spacer(minLength: 0)
             }
             .containerBackground(.fill.tertiary, for: .widget)
 
         default:
-            StepsRing(steps: entry.steps, lineWidth: 11)
-                .containerBackground(.fill.tertiary, for: .widget)
+            VStack(spacing: 6) {
+                StepsRing(steps: activity.steps, lineWidth: 10)
+                HStack(spacing: 4) {
+                    Image(systemName: "flame.fill")
+                        .font(.caption2)
+                        .foregroundStyle(.orange)
+                    Text("\(kcalText(activity.activeKcal)) · 추정 \(kcalText(activity.estimatedKcal))")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                }
+            }
+            .containerBackground(.fill.tertiary, for: .widget)
         }
     }
 }
@@ -73,7 +94,7 @@ struct StepsWidget: Widget {
             StepsWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("오늘 걸음수")
-        .description("오늘 걸은 걸음 수를 보여줍니다.")
+        .description("오늘 걸음 수와 소모 칼로리를 보여줍니다.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
@@ -81,6 +102,6 @@ struct StepsWidget: Widget {
 #Preview(as: .systemSmall) {
     StepsWidget()
 } timeline: {
-    StepsEntry(date: .now, steps: 6420)
-    StepsEntry(date: .now, steps: 10240)
+    StepsEntry(date: .now, activity: TodayActivity(steps: 6420, activeKcal: 320, estimatedKcal: 256))
+    StepsEntry(date: .now, activity: TodayActivity(steps: 10240, activeKcal: 540, estimatedKcal: 409))
 }
